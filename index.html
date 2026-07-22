@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A speculative application by Ini Lim for d3pot-wrks." />
+  <title>Ini Lim × d3pot-wrks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-label" aria-hidden="true">OPEN</div>
+
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Back to top">INI / D3POT</a>
+    <nav aria-label="Primary navigation">
+      <a href="#brief">Brief</a>
+      <a href="#roles">Roles</a>
+      <a href="#proof">Proof</a>
+      <a href="#contact">Coffee?</a>
+    </nav>
+    <div class="availability"><span></span> Speculative application</div>
+  </header>
+
+  <main id="top">
+    <section class="hero full-screen">
+      <div class="hero-meta mono reveal">
+        <span>PROJECT_001</span>
+        <span>STATUS: SELF-INITIATED</span>
+        <span>AMSTERDAM / 2026</span>
+      </div>
+
+      <h1 class="hero-title reveal">
+        <span>You’re not</span>
+        <span class="outline">hiring.</span>
+      </h1>
+
+      <div class="hero-bottom reveal">
+        <p>So I made my own brief.</p>
+        <a class="scroll-cue" href="#brief">Scroll to open <span>↓</span></a>
+      </div>
+
+      <div class="floating-stamp" aria-hidden="true">
+        <span>NO VACANCY</span>
+        <strong>NO PROBLEM</strong>
+      </div>
+    </section>
+
+    <section id="brief" class="brief section-pad">
+      <div class="section-label mono reveal">01 / THE BRIEF</div>
+      <div class="brief-grid">
+        <h2 class="reveal">Since there was no job description, I wrote one.</h2>
+        <div class="brief-sheet reveal">
+          <div class="sheet-row">
+            <span>CLIENT</span>
+            <strong>d3pot-wrks</strong>
+          </div>
+          <div class="sheet-row">
+            <span>CHALLENGE</span>
+            <strong>No open role.</strong>
+          </div>
+          <div class="sheet-row">
+            <span>OBJECTIVE</span>
+            <strong>Show where I could be useful.</strong>
+          </div>
+          <div class="sheet-row">
+            <span>DELIVERABLE</span>
+            <strong>This website.</strong>
+          </div>
+          <div class="sheet-row">
+            <span>DEADLINE</span>
+            <strong>Whenever you have coffee.</strong>
+          </div>
+          <div class="status-strip mono">
+            <span>BRIEF RECEIVED</span>
+            <span class="line"></span>
+            <span class="status-pill">IN PROGRESS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="roles" class="roles section-pad dark-section">
+      <div class="section-label mono reveal">02 / POSSIBLE SOLUTIONS</div>
+      <div class="roles-intro reveal">
+        <h2>What might you need?</h2>
+        <p>Choose a role. The person stays the same.</p>
+      </div>
+
+      <div class="role-tabs reveal" role="tablist" aria-label="Choose a possible role">
+        <button class="role-tab active" data-role="pr" role="tab" aria-selected="true">PR</button>
+        <button class="role-tab" data-role="pm" role="tab" aria-selected="false">PROJECT MANAGEMENT</button>
+        <button class="role-tab" data-role="production" role="tab" aria-selected="false">PRODUCTION</button>
+      </div>
+
+      <div class="role-panel reveal" aria-live="polite">
+        <div class="role-number" id="roleNumber">01</div>
+        <div class="role-copy">
+          <p class="mono" id="roleKicker">RELATIONSHIPS / COMMUNICATION / CULTURAL RELEVANCE</p>
+          <h3 id="roleTitle">Someone to build relationships.</h3>
+          <ul id="roleList">
+            <li><span>01</span> Media & creator relations</li>
+            <li><span>02</span> Campaign communications</li>
+            <li><span>03</span> Press outreach & follow-up</li>
+            <li><span>04</span> Partnerships & community</li>
+          </ul>
+        </div>
+        <div class="role-note" id="roleNote">Good stories matter. So does making sure the right people actually hear them.</div>
+      </div>
+
+      <div class="same-person reveal">
+        <span>THREE POSSIBLE TITLES</span>
+        <strong>Same person. Different hat.</strong>
+      </div>
+    </section>
+
+    <section class="workflow section-pad">
+      <div class="section-label mono reveal">03 / HOW I WORK</div>
+      <div class="workflow-head reveal">
+        <h2>Ideas are nice.<br />Movement is better.</h2>
+        <p>I connect the thinking, the people and the practical details that get a project over the line.</p>
+      </div>
+
+      <div class="workflow-board reveal">
+        <div class="board-header mono">
+          <span>CAMPAIGN_STATUS.csv</span>
+          <span>LIVE</span>
+        </div>
+        <div class="progress-item">
+          <div><span>Strategy understood</span><b>100%</b></div>
+          <div class="progress-track"><i style="--progress:100%"></i></div>
+        </div>
+        <div class="progress-item">
+          <div><span>Stakeholders aligned</span><b>100%</b></div>
+          <div class="progress-track"><i style="--progress:100%"></i></div>
+        </div>
+        <div class="progress-item">
+          <div><span>Timeline moving</span><b>100%</b></div>
+          <div class="progress-track"><i style="--progress:100%"></i></div>
+        </div>
+        <div class="progress-item">
+          <div><span>Unexpected changes</span><b>300%</b></div>
+          <div class="progress-track chaos"><i style="--progress:88%"></i></div>
+        </div>
+        <div class="progress-item">
+          <div><span>Handled</span><b>100%</b></div>
+          <div class="progress-track"><i style="--progress:100%"></i></div>
+        </div>
+      </div>
+
+      <div class="work-log reveal">
+        <div class="log-entry"><time>09:12</time><p>The brief changed.</p></div>
+        <div class="log-entry"><time>09:14</time><p>Timeline updated.</p></div>
+        <div class="log-entry"><time>09:17</time><p>Everyone informed.</p></div>
+        <div class="log-entry accent"><time>09:18</time><p>Still on track.</p></div>
+      </div>
+    </section>
+
+    <section id="proof" class="proof section-pad">
+      <div class="section-label mono reveal">04 / SELECTED PROOF</div>
+      <div class="proof-heading reveal">
+      </div>
+
+      <div class="case-list">
+        <article class="case-card magnetic reveal" tabindex="0">
+          <div class="case-top mono"><span>CASE_01</span><span>PARIS / SHOWROOM EVENT</span></div>
+          <div class="case-main">
+            <h3>Paris Fashion Week Showroom Event</h3>
+            <div class="case-stat"><strong>350+</strong><span>invited</span></div>
+            <div class="case-stat"><strong>150+</strong><span>attended</span></div>
+          </div>
+          <div class="case-detail">
+            <p>PR outreach, guest list management, communications, partner coordination and on-site event execution from planning through launch.</p>
+          </div>
+          <div class="case-arrow">↗</div>
+        </article>
+
+        <article class="case-card magnetic reveal" tabindex="0">
+          <div class="case-top mono"><span>CASE_02</span><span>PR / IN-HOUSE</span></div>
+          <div class="case-main">
+            <h3>Building PR from inside the brand</h3>
+            <div class="case-stat"><strong>01</strong><span>brand voice</span></div>
+            <div class="case-stat"><strong>∞</strong><span>follow-ups</span></div>
+          </div>
+          <div class="case-detail">
+            <p>Press releases, newsletters, media and creator outreach, campaign coordination and monitoring — with the speed and context of an in-house team.</p>
+          </div>
+          <div class="case-arrow">↗</div>
+        </article>
+
+        <article class="case-card magnetic reveal" tabindex="0">
+          <div class="case-top mono"><span>CASE_03</span><span>BRIEF → LAUNCH</span></div>
+          <div class="case-main">
+            <h3>Making campaigns move</h3>
+            <div class="case-stat"><strong>PR</strong><span>relationships</span></div>
+            <div class="case-stat"><strong>PM</strong><span>structure</span></div>
+            <div class="case-stat"><strong>PROD</strong><span>delivery</span></div>
+          </div>
+          <div class="case-detail">
+            <p>Connecting communications, retail operations, collaborators and production details so that ideas survive contact with reality.</p>
+          </div>
+          <div class="case-arrow">↗</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="truth section-pad dark-section">
+      <p class="mono reveal">A SMALL DISCLAIMER</p>
+      <div class="truth-lines">
+        <h2 class="reveal">These sound like different jobs.</h2>
+        <h2 class="muted reveal">They were.</h2>
+        <h2 class="outline-text reveal">I just happened to do them all.</h2>
+      </div>
+    </section>
+
+    <section class="about section-pad">
+      <div class="section-label mono reveal">05 / THE PERSON</div>
+      <div class="about-grid">
+        <div class="about-title reveal">
+          <h2>I’m not the loudest person in the room.</h2>
+          <div class="tiny-note mono">...ACCORDING TO ME</div>
+        </div>
+        <div class="about-copy reveal">
+          <p>But I’m usually the one connecting the dots, following up and making sure everything actually happens.</p>
+          <ul>
+            <li>Calm under pressure</li>
+            <li>Curious by default</li>
+            <li>Trust-first and ego-light</li>
+            <li>Comfortable between creative and operational teams</li>
+          </ul>
+        </div>
+      </div>
+      <div class="file-name mono reveal">FINAL_FINAL_v7_ACTUALLYFINAL.xlsx <span>Project managers know.</span></div>
+    </section>
+
+    <section id="contact" class="contact full-screen dark-section">
+      <div class="contact-inner reveal">
+        <p class="mono">06 / NEXT STEP</p>
+        <h2>You weren’t hiring.<br />I emailed anyway.</h2>
+        <p class="contact-sub">Worth a coffee?</p>
+        <!-- Replace the email address below with your own before publishing. -->
+        <a class="cta magnetic" href="mailto:inijeannelim@gmail.com?subject=Coffee%20about%20d3pot-wrks">Let’s talk <span>↗</span></a>
+      </div>
+      <div class="footer-line mono">
+        <span>INI LIM / AMSTERDAM</span>
+        <span>404: JOB OPENING NOT FOUND. CREATING ONE INSTEAD.</span>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
